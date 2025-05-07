@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluations Page</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/view-all-page-styles.css">
+
+    <!-- JavaScript Links -->
+    <script defer src="scripts/general-scripts.js"></script>
+
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/5ba477d22e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-left-side">
+                <i onclick="toggleMenu()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <div class="navbar-logo-container">
+                    <img src="local images/placeholder-img.svg" alt="website logo">
+                    <h1>ReRank</h1>
+                </div>
+            </div>
+            <div class="navbar-right-side">
+                <a href="profile-page.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div id="hidden-menu">
+            <a href="index.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="application-page.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-file-circle-check" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Review Applications</p>
+                </div>
+            </a>
+            <a href="profile-page.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-address-book" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Profile</p>
+                </div>
+            </a>
+            <a href="research-documents-page.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-file-lines" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Research Documents</p>
+                </div>
+            </a>
+            <a href="evaluations-page.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Evaluations</p>
+                </div>
+            </a>
+            <a href="event-participation-page.html">
+                <div class="hidden-menu-icon">
+                    <i class="fa-solid fa-calendar-day" style="color: #ffffff;"></i>
+                </div>
+                <div class="hidden-menu-title">
+                    <p>Event Participations</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="header">
+        <h1>Evaluations</h1>
+    </div>
+    <div class="performance-metric-container">
+        <table>
+            <tbody>
+                <tr>
+                    <th>ID Number</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>
+                        <div class="search-bar-container">
+                            <form action="">
+                                <input type="text" placeholder="Search..">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                            </form>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Student Evaluation</td>
+                    <td>N/A</td>
+                    <td>Ongoing</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Student Evaluation</td>
+                    <td>July 12, 2024</td>
+                    <td>Uploaded</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Student Evaluation</td>
+                    <td>June 2, 2024</td>
+                    <td>Ongoing</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Faculty/Peer Evaluation</td>
+                    <td>February 16, 2024</td>
+                    <td>Uploaded</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Student Evaluation</td>
+                    <td>March 17, 2024</td>
+                    <td>Uploaded</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Faculty/Peer Evaluation</td>
+                    <td>April 2, 2024</td>
+                    <td>Uploaded</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Student Evaluation</td>
+                    <td>April 15, 2024</td>
+                    <td>Uploaded</td>
+                    <td><div><button>View</button><button>Edit</button></div></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="load-more-container">
+            <button onclick="window.location.href='profile-page.html'">Back</button>
+            <button>Load More +</button>
+        </div>
+    </div>
+</body>
+</html>
