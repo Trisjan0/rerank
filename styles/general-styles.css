@@ -30,8 +30,14 @@ body {
 }
 
 /* NAVBAR STYLING -- -- -- */
+nav {
+    width: 100vw;
+    height: auto;
+}
+
 .navbar-container {
     background-color: var(--primaryColor);
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -72,7 +78,7 @@ body {
 }
 
 .navbar-right-side {
-    margin-right: 40px;
+    margin-right: 40px; /* 2.5vw */
     width: auto;
     height: auto;
     display: flex;

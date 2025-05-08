@@ -1,9 +1,11 @@
 /* PAGE HEADER STYLING -- -- -- */
 .header {
+    width: auto;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .header h1 {
@@ -13,19 +15,20 @@
 
 /* DATA DISPLAY TABLE STYLING -- -- -- */
 .performance-metric-container {
+    overflow-x: auto;
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
 }
 
 .performance-metric-container table {
-    width: 90vw;
+    width: 90%;
     height: auto;
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .performance-metric-container table th {
@@ -109,12 +112,15 @@
 
 /* LOAD MORE STYLING -- -- -- */
 .load-more-container {
-    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90vw;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+    justify-self: center;
 }
 
 .load-more-container button {

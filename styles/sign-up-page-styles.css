@@ -85,3 +85,16 @@ input[type="submit"]:hover {
     cursor: pointer;
     background-color: var(--secondaryColorHover);
 }
+
+/* RESPONSIVE DESIGN -- -- -- */
+@media (max-width: 426px) {
+    .main-content {
+        margin-top: 15vh;
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

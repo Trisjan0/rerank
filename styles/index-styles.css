@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
 .research-publication-container {
@@ -191,7 +192,7 @@
 
 .latest-research-title-header {
     background-color: var(--primaryColor);
-    width: 100%;
+    width: auto;
     height: 100px;
     display: flex;
     justify-content: start;
@@ -202,6 +203,12 @@
 
 .latest-research-title-header h1 {
     font-family: Montserrat-font-bold;
+}
+
+.latest-research-title-table-container {
+    overflow: auto;
+    width: 100%;
+    height: auto;
 }
 
 .latest-research-title-container table {
@@ -237,4 +244,47 @@
     cursor: pointer;
     scale: 1.01;
     background-color: var(--secondaryColorHover);
+}
+
+/* RESPONSIVE DESIGN -- -- -- */
+@media (max-width: 839px) {
+    .main-content-container h1 {
+      text-align: left;
+      font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .overall-completion-overview-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .research-publication-container {
+        border: 5px solid var(--primaryColor);
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .event-participation-container {
+        border: 5px solid var(--primaryColor);
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
 }
